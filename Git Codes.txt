@@ -1,0 +1,616 @@
+$ git --version
+$ git config --global user.name "Ramadoss"
+$ git config --global user.email "ramfavour@gmail.com"
+$ git config --list
+$ git init git-pgm-angular
+$ cd git-pgm-angular
+$ ls -la
+$ git status
+$ touch angular-demo.html
+$ ls
+$ git add -A
+$ git commit -m "First Commit added two files"
+$ git status
+$ touch style.css
+$ git add style.css
+$ git commit -m "Committed style.css file"
+$ git diff
+
+https://github.com/Ramfavour/git-pgm-angular-demo
+
+https://github.com/Ramfavour/git-pgm-angular-demo.git
+
+$ git remote add orgin https://github.com/Ramfavour/git-pgm-angular-demo.git
+
+$ git push orgin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git --version
+git version 2.20.1.windows.1
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git config --global user.name
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git config --global user.name "Ramadoss"
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git config --global user.email "ramfavour@gmail.com"
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git config --list
+core.symlinks=true
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+user.name=Ramadoss
+user.email=ramfavour@gmail.com
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ git init git-pgm-angular
+Initialized empty Git repository in C:/Angular-Project/git-pgm-angular/.git/
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project
+$ cd git-pgm-angular
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls -la
+total 4
+drwxr-xr-x 1 Ramadoss 197121 0 Feb 17 14:44 ./
+drwxr-xr-x 1 Ramadoss 197121 0 Feb 17 14:44 ../
+drwxr-xr-x 1 Ramadoss 197121 0 Feb 17 14:44 .git/
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        demo.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ touch angular-demo.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        angular-demo.html
+        demo.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls
+angular-demo.html  demo.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add -A
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls
+angular-demo.html  demo.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   angular-demo.html
+        new file:   demo.html
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "First Commit added two files"
+[master (root-commit) e3b8d90] First Commit added two files
+ 2 files changed, 87 insertions(+)
+ create mode 100644 angular-demo.html
+ create mode 100644 demo.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls
+angular-demo.html  demo.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git log
+commit e3b8d9024445c280e511557ebcc705e399e5b212 (HEAD -> master)
+Author: Ramadoss <ramfavour@gmail.com>
+Date:   Sun Feb 17 14:59:40 2019 +0530
+
+    First Commit added two files
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ code .
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ touch style.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add style.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls
+angular-demo.html  demo.html  style.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   style.css
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Committed style.css file"
+[master 9dd4a6b] Committed style.css file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 style.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git log
+commit 9dd4a6bbb8ce802b9d1cb0e392f5afb79053742d (HEAD -> master)
+Author: Ramadoss <ramfavour@gmail.com>
+Date:   Sun Feb 17 15:07:00 2019 +0530
+
+    Committed style.css file
+
+commit e3b8d9024445c280e511557ebcc705e399e5b212
+Author: Ramadoss <ramfavour@gmail.com>
+Date:   Sun Feb 17 14:59:40 2019 +0530
+
+    First Commit added two files
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   angular-demo.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   angular-demo.html
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ^C
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ^C
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git diff
+diff --git a/angular-demo.html b/angular-demo.html
+index e69de29..67cb4e9 100644
+--- a/angular-demo.html
++++ b/angular-demo.html
+@@ -0,0 +1,13 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <meta http-equiv="X-UA-Compatible" content="ie=edge">
++    <title>Git</title>
++    <link rel="stylesheet" href="./style.css"
++</head>
++<body>
++    <h1> Ramadoss's first git</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/style.css b/style.css
+index e69de29..4d43365 100644
+--- a/style.css
++++ b/style.css
+@@ -0,0 +1,11 @@
+:
+index e69de29..67cb4e9 100644
+--- a/angular-demo.html
++++ b/angular-demo.html
+@@ -0,0 +1,13 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <meta http-equiv="X-UA-Compatible" content="ie=edge">
++    <title>Git</title>
++    <link rel="stylesheet" href="./style.css"
++</head>
++<body>
++    <h1> Ramadoss's first git</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/style.css b/style.css
+index e69de29..4d43365 100644
+--- a/style.css
++++ b/style.css
+@@ -0,0 +1,11 @@
++html,body,*{
++    padding: 0;
++    margin: 0;
++}
++
++h1{
++    color: green;
++    background-color: yellow;
++    padding: 25px;
++    text-align: center;
++}
+\ No newline at end of file
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   angular-demo.html
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add -A
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   angular-demo.html
+        modified:   style.css
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Committed both file after modify"
+[master 1ada1b1] Committed both file after modify
+ 2 files changed, 24 insertions(+)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git remote add origin https://github.com/Ramfavour/git-pgm-angular-demo
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git remote add orgin https://github.com/Ramfavour/git-pgm-angular-demo.git
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git push orgin master
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ^C
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ^C
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ ls -la
+total 22
+drwxr-xr-x 1 Ramadoss 197121    0 Feb 17 18:58 ./
+drwxr-xr-x 1 Ramadoss 197121    0 Feb 17 14:44 ../
+drwxr-xr-x 1 Ramadoss 197121    0 Feb 17 18:07 .git/
+-rw-r--r-- 1 Ramadoss 197121 1198 Feb 17 18:59 Alert-Demo.html
+-rw-r--r-- 1 Ramadoss 197121  346 Feb 17 15:08 angular-demo.html
+-rw-r--r-- 1 Ramadoss 197121 3296 Feb 14 11:11 demo.html
+-rw-r--r-- 1 Ramadoss 197121 1616 Feb 17 18:56 PopoverJS.html
+-rw-r--r-- 1 Ramadoss 197121  153 Feb 17 15:14 style.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Alert-Demo.html
+        PopoverJS.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add -A *
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Alert-Demo.html
+        new file:   PopoverJS.html
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Commiting Alert and PopOver"
+[master d1ff5f2] Commiting Alert and PopOver
+ 2 files changed, 75 insertions(+)
+ create mode 100644 Alert-Demo.html
+ create mode 100644 PopoverJS.html
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   PopoverJS.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        FacebookLoginPage.html
+        StyleSheet.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add *
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   FacebookLoginPage.html
+        modified:   PopoverJS.html
+        new file:   StyleSheet.css
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Added facebook page and stylesheet for this"
+[master 8772902] Added facebook page and stylesheet for this
+ 3 files changed, 262 insertions(+)
+ create mode 100644 FacebookLoginPage.html
+ create mode 100644 StyleSheet.css
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   FacebookLoginPage.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Added facebook page and stylesheet for this"
+On branch master
+Changes not staged for commit:
+        modified:   FacebookLoginPage.html
+
+no changes added to commit
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add *
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Added facebook page and stylesheet for this"
+[master e83724a] Added facebook page and stylesheet for this
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Git Codes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git add -A *
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Git Codes.txt
+
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git commit -m "Added Git Codes file"
+[master 7882c3b] Added Git Codes file
+ 1 file changed, 574 insertions(+)
+ create mode 100644 Git Codes.txt
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Ramadoss@Ramadoss-HP MINGW64 /c/Angular-Project/git-pgm-angular (master)
+$

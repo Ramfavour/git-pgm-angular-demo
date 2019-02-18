@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Popover Program</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+  <h3>Popover Example</h3>
+  <a href="#" title="Ram Is The Boss" data-toggle="popover" data-content="This is Ram's place">Click Me</a><br>
+ <a href="#" title="Sharvesh" data-toggle="popover" data-trigger="hover" data-content="This is Uga's place">Hover over me</a> 
+ <div>
+ 
+ <div class="row">
+ <ul class="list-inline">
+ <li> <a href="#" title="TOP POP" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="I am in TOP"> I am in TOP </li>
+ <li> <a href="#" title="BOTTOM POP" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="I am in BOTTOM"> I am in BOTTOM </li>
+ <li> <a href="#" title="left POP" data-toggle="popover" data-placement="left" data-trigger="hover" data-content="I am in LEFT"> I am in LEFT </li>
+ <li> <a href="#" title="right POP" data-toggle="popover" data-placement="right" data-trigger="hover" data-content="I am in RIGHT"> I am in RIGHT </li>
+ </ul>
+ </div> 
+ 
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+$('[data-toggle="popover"]').on('show.bs.popover', function () {
+  alert("Show on");
+})
+$('[data-toggle="popover"]').on('shown.bs.popover', function () {
+  alert("Shown on");
+})
+$('[data-toggle="popover"]').on('hide.bs.popover', function () {
+  alert("Hide on");
+})
+$('[data-toggle="popover"]').on('hidden.bs.popover', function () {
+  alert("Hidden on");
+})
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Alert Events</h2>
+  <p>The <strong>close</strong> event occurs when the alert message is about to be closed.</p>
+  <div class="alert alert-danger alert-dismissible" id="myAlert">
+    <a href="#" class="close">&times;</a>
+    <strong>Hey you!</strong> Try to close this alert message.
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $(".close").click(function(){
+    $("#myAlert").alert("close");
+  });
+  $("#myAlert").on('close.bs.alert', function(){
+    alert('The alert message is about to be closed.');
+  });
+  $("#myAlert").on('closed.bs.alert', function(){
+    alert('The alert message is closed now.');
+  });
+});
+</script>
+
+</body>
+</html>
